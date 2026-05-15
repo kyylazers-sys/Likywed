@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hasan & Husnul Wedding</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<audio id="music" loop>
+<source src="assets/audio/romantic.mp3" type="audio/mp3">
+</audio>
+
+<div class="music-btn" onclick="toggleMusic()">
+♫
+</div>
+
+<section class="opening" id="opening">
+
+<div class="opening-overlay"></div>
+
+<div class="flower flower-top-left"></div>
+<div class="flower flower-top-right"></div>
+<div class="flower flower-bottom-left"></div>
+<div class="flower flower-bottom-right"></div>
+
+<div class="opening-content">
+
+<p class="small-title">THE WEDDING OF</p>
+
+<div class="monogram-wrap">
+<div class="line"></div>
+<h1>HH</h1>
+<div class="line"></div>
+</div>
+
+<h2>
+Hasan Nurdin
+<span>&</span>
+Husnul Amanah
+</h2>
+
+<p class="date-text">
+SENIN • 01 JUNI 2026
+</p>
+
+<div class="guest-box">
+<p>Kepada Yth.</p>
+<h3 id="guestName">Tamu Undangan</h3>
+</div>
+
+<button onclick="openInvitation()">
+Buka Undangan
+</button>
+
+</div>
+
+</section>
+
+<section class="hero">
+
+  <div class="texture"></div>
+
+  <div class="hero-flower left"></div>
+  <div class="hero-flower right"></div>
+
+  <!-- FRAME -->
+  <div class="hero-frame">
+
+    <div class="hero-content">
+
+      <p class="hero-mini">THE WEDDING OF</p>
+
+      <div class="hero-monogram">
+        <div class="hero-line"></div>
+        <h1>HH</h1>
+        <div class="hero-line"></div>
+      </div>
+
+      <h2>
+        Hasan Nurdin
+        <span>&</span>
+        Husnul Amanah
+      </h2>
+
+      <p class="hero-date">
+        Senin • 01 Juni 2026
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="quote-section reveal">
+
+  <div class="section-line left-line"></div>
+  <div class="section-line right-line"></div>
+
+  <div class="quote-card">
+
+    <div class="section-ornament"></div>
+
+    <h2>QS. Ar-Rum 21</h2>
+
+    <p class="arabic">
+      وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةًۗ اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ
+    </p>
+
+    <p class="translation">
+      Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri agar kamu merasa tenteram kepadanya.
+    </p>
+
+  </div>
+
+</section>
+
+<section class="couple-section reveal">
+
+<div class="section-line left-line"></div>
+<div class="section-line right-line"></div>
+
+<div class="couple-card">
+<h2>Hasan</h2>
+<h3>Hasan Nurdin</h3>
+<p>Putra Pertama dari Bapak Hasan Basri & Ibu Tini</p>
+</div>
+
+<div class="heart">❤</div>
+
+<div class="couple-card">
+<h2>Husnul</h2>
+<h3>Husnul Amanah</h3>
+<p>Putri Pertama dari Bapak Maman Herdiman & Ibu Eha Julaeha</p>
+</div>
+
+</section>
+
+
+<section class="countdown-section reveal">
+
+<div class="section-line left-line"></div>
+<div class="section-line right-line"></div>
+
+<h1>Save The Date</h1>
+
+<div id="countdown"></div>
+
+</section>
+
+<section class="event-section reveal">
+
+  <div class="section-line left-line"></div>
+  <div class="section-line right-line"></div>
+
+  <h1>Wedding Event</h1>
+
+  <div class="event-container">
+
+    <div class="event-card single-event">
+
+      <h2>Akad Nikah & Resepsi</h2>
+      <p>Senin</p>
+      <h3>01 Juni 2026</h3>
+      <p>Pukul 08.00 s/d selesai</p>
+
+      <span class="event-location">
+        Kediaman Mempelai Perempuan<br>
+        Lingk. Banjar Kolot GG Bayem RT 005 / RW 014<br>
+        Kel. Banjar, Kec. Banjar
+      </span>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="gift-section reveal">
+
+  <div class="section-line left-line"></div>
+  <div class="section-line right-line"></div>
+
+  <h1>Wedding Gift</h1>
+
+  <div class="gift-intro">
+    <p>Bagi yang tidak dapat hadir, doa restu Anda sudah sangat berarti 💕</p>
+
+    <button class="gift-button" onclick="openGift()">
+      Wedding Gift
+    </button>
+  </div>
+
+  <!-- MODAL -->
+  <div id="giftModal" class="gift-modal">
+
+    <div class="gift-card-modal small">
+
+      <h2>Wedding Gift</h2>
+
+     <div class="gift-list">
+
+  <div class="gift-row">
+    <span>DANA</span>
+    <p id="dana1">0895379015100</p>
+    <small>a.n Husnul Amanah</small>
+    <button onclick="copyText('dana1')">Salin Nomor</button>
+  </div>
+
+  <div class="gift-row">
+    <span>DANA</span>
+    <p id="dana2">089668125101</p>
+    <small>a.n Hasan Nurdin</small>
+    <button onclick="copyText('dana2')">Salin Nomor</button>
+  </div>
+
+  <div class="gift-row">
+    <span>BNI</span>
+    <p id="bni1">1817720468</p>
+    <small>a.n Husnul</small>
+    <button onclick="copyText('bni1')">Salin Nomor</button>
+  </div>
+
+</div>
+
+      <button class="copy-all" onclick="copyAll()">
+        Salin Nomor
+      </button>
+
+      <button class="close-btn" onclick="closeGift()">Tutup</button>
+
+    </div>
+
+  </div>
+
+</section>
+<section class="wish-section reveal">
+
+<div class="section-line left-line"></div>
+<div class="section-line right-line"></div>
+
+<h1>Ucapan & Doa</h1>
+
+<form id="commentForm">
+<input type="text" id="name" placeholder="Nama Anda" required>
+
+<select id="attendance" required>
+<option value="">Konfirmasi Kehadiran</option>
+<option value="Hadir">Hadir</option>
+<option value="Tidak Hadir">Tidak Hadir</option>
+</select>
+
+<textarea id="message" placeholder="Tulis ucapan..." required></textarea>
+<button type="submit">Kirim Ucapan</button>
+</form>
+
+<div id="commentList" class="comment-list">
+<div class="comment-item">
+<h3>Rizky ✔</h3>
+<span class="comment-info">Hadir • 1 jam lalu</span>
+<p>Selamat menempuh hidup baru.</p>
+</div>
+</div>
+
+</section>
+
+<footer>
+<h2>Hasan & Husnul</h2>
+<p>Thank You For Your Presence</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
