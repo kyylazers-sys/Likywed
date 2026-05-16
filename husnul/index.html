@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hasan & Husnul Wedding</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 <body>
 
 <audio id="music">
-  <source src="assets/audio/romantic.mp3" type="audio/mp3">
+  <source src="../assets/audio/romantic.mp3" type="audio/mp3">
 </audio>
 
 <div class="music-btn" onclick="toggleMusic()">
@@ -71,7 +71,6 @@ SENIN • 01 JUNI 2026
   <div class="hero-flower left"></div>
   <div class="hero-flower right"></div>
 
-  <!-- FRAME -->
   <div class="hero-frame">
 
     <div class="hero-content">
@@ -123,14 +122,11 @@ SENIN • 01 JUNI 2026
 
 </section>
 
-</section>
-
 <section class="couple-section reveal">
 
   <div class="section-line left-line"></div>
   <div class="section-line right-line"></div>
 
-  <!-- BRIDE & GROOM INTRO -->
   <div class="bride-groom-card">
 
     <span class="mini-title">Bride & Groom</span>
@@ -145,7 +141,6 @@ SENIN • 01 JUNI 2026
 
   </div>
 
-  <!-- COUPLE CARD -->
   <div class="couple-card">
     <h2>Hasan</h2>
     <h3>Hasan Nurdin</h3>
@@ -186,20 +181,19 @@ SENIN • 01 JUNI 2026
 
       <h2>Akad Nikah</h2>
       <p>Senin</p>
-      <h3>01 Juni 2026</h3>
-      
+      <h3>Senin, 01 Juni 2026</h3>
+
       <div class="event-space"></div>
-      
+
       <h2>Resepsi</h2>
       <p>Senin</p>
-      <h3>01 Juni 2026</h3>
+      <h3>Senin, 01 Juni 2026</h3>
 
       <span class="event-location">
         Kediaman Mempelai Wanita<br>
         Lingk. Banjar Kolot GG Bayem RT 005 / RW 014
       </span>
 
-      <!-- SHARELOCK MAP -->
       <a 
         href="https://maps.app.goo.gl/QowNBWjHw3Qqw45n7?g_st=ac"
         target="_blank"
@@ -230,56 +224,61 @@ SENIN • 01 JUNI 2026
 
   <div class="gift-intro">
     <p>
- Doa restu anda merupakan karunia yang sangat berarti bagi  kami. Namun jika memberi adalah ungkapan tanda kasih anda, anda dapat memberi gift</p>
+ Doa restu anda merupakan karunia yang sangat berarti bagi kami.
+ Namun jika memberi adalah ungkapan tanda kasih anda,
+ anda dapat memberi gift
+    </p>
 
     <button class="gift-button" onclick="openGift()">
       Wedding Gift
     </button>
   </div>
 
-  <!-- MODAL -->
   <div id="giftModal" class="gift-modal">
 
     <div class="gift-card-modal small">
 
       <h2>Wedding Gift</h2>
 
-     <div class="gift-list">
+      <div class="gift-list">
 
-  <div class="gift-row">
-    <span>DANA</span>
-    <p id="dana1">0895379015100</p>
-    <small>a.n Husnul Amanah</small>
-    <button onclick="copyText('dana1')">Salin Nomor</button>
-  </div>
+        <div class="gift-row">
+          <span>DANA</span>
+          <p id="dana1">0895379015100</p>
+          <small>a.n Husnul Amanah</small>
+          <button onclick="copyText('dana1')">Salin Nomor</button>
+        </div>
 
-  <div class="gift-row">
-    <span>DANA</span>
-    <p id="dana2">089668125101</p>
-    <small>a.n Hasan Nurdin</small>
-    <button onclick="copyText('dana2')">Salin Nomor</button>
-  </div>
+        <div class="gift-row">
+          <span>DANA</span>
+          <p id="dana2">089668125101</p>
+          <small>a.n Hasan Nurdin</small>
+          <button onclick="copyText('dana2')">Salin Nomor</button>
+        </div>
 
-  <div class="gift-row">
-    <span>BNI</span>
-    <p id="bni1">1817720468</p>
-    <small>a.n Husnul</small>
-    <button onclick="copyText('bni1')">Salin Nomor</button>
-  </div>
+        <div class="gift-row">
+          <span>BNI</span>
+          <p id="bni1">1817720468</p>
+          <small>a.n Husnul</small>
+          <button onclick="copyText('bni1')">Salin Nomor</button>
+        </div>
 
-</div>
+      </div>
 
       <button class="copy-all" onclick="copyAll()">
         Salin Nomor
       </button>
 
-      <button class="close-btn" onclick="closeGift()">Tutup</button>
+      <button class="close-btn" onclick="closeGift()">
+        Tutup
+      </button>
 
     </div>
 
   </div>
 
 </section>
+
 <section class="wish-section reveal">
 
 <div class="section-line left-line"></div>
@@ -288,6 +287,7 @@ SENIN • 01 JUNI 2026
 <h1>Ucapan & Doa</h1>
 
 <form id="commentForm">
+
 <input type="text" id="name" placeholder="Nama Anda" required>
 
 <select id="attendance" required>
@@ -297,10 +297,15 @@ SENIN • 01 JUNI 2026
 </select>
 
 <textarea id="message" placeholder="Tulis ucapan..." required></textarea>
-<button type="submit">Kirim Ucapan</button>
+
+<button type="submit">
+Kirim Ucapan
+</button>
+
 </form>
 
 <div id="commentList" class="comment-list"></div>
+
 </section>
 
 <footer>
@@ -308,6 +313,7 @@ SENIN • 01 JUNI 2026
 <p>Thank You For Your Presence</p>
 </footer>
 
-<script src="script.js"></script>
+<script src="../script.js"></script>
+
 </body>
 </html>
