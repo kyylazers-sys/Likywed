@@ -178,10 +178,6 @@ overflow:hidden;
 }
 
 .opening{
-  transition: 1s ease;
-}
-
-.opening{
 position:fixed;
 inset:0;
 background:

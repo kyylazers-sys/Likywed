@@ -130,7 +130,7 @@ function timeAgo(timestamp){
 
 }
 
-/* RENDER */
+/* RENDER KOMENTAR */
 function renderComments(){
 
   commentList.innerHTML = '';
@@ -157,10 +157,45 @@ function renderComments(){
 
 renderComments();
 
-/* UPDATE TIME */
+/* UPDATE WAKTU OTOMATIS */
 setInterval(renderComments, 60000);
 
-/* SUBMIT */
+/* SUBMIT KOMENTAR */
+form.addEventListener('submit', (e) => {
+
+  e.preventDefault();
+const form = document.getElementById('commentForm');
+const commentList = document.getElementById('commentList');
+
+/* LOAD KOMENTAR */
+let comments = JSON.parse(localStorage.getItem('weddingComments')) || [];
+
+function renderComments() {
+
+  commentList.innerHTML = '';
+
+  comments.forEach((item) => {
+
+    const div = document.createElement('div');
+
+    div.classList.add('comment-item');
+
+    div.innerHTML = `
+      <h3>${item.name} ✔</h3>
+      <span class="comment-info">${item.attendance} • baru saja</span>
+      <p>${item.message}</p>
+    `;
+
+    commentList.appendChild(div);
+
+  });
+
+}
+}
+
+renderComments();
+
+/* SUBMIT KOMENTAR */
 form.addEventListener('submit', (e) => {
 
   e.preventDefault();
@@ -173,7 +208,7 @@ form.addEventListener('submit', (e) => {
     name: name,
     attendance: attendance,
     message: message,
-    timestamp: Date.now()
+    time: 'baru saja'
   };
 
   comments.unshift(newComment);
@@ -189,6 +224,7 @@ form.addEventListener('submit', (e) => {
 
 });
 
+  
 window.onload = function () {
 
   const music = document.getElementById('music');
