@@ -63,16 +63,94 @@ overflow:hidden;
   opacity: 0.85;
   font-size: 15px;
 }
+.bride-groom-card{
+  position: relative;
+  overflow: hidden;
 
-.intro-couple{
-  margin-top: 35px;
+  padding: 45px 30px;
+  margin-bottom: 45px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
+  border-radius: 32px;
 
-  flex-wrap: wrap;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.08),
+      rgba(255,255,255,0.03)
+    );
+
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255,255,255,0.12);
+
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.18);
+}
+
+.bride-groom-card::before{
+  content: "";
+
+  position: absolute;
+
+  width: 250px;
+  height: 250px;
+
+  background: rgba(255,255,255,0.05);
+
+  border-radius: 50%;
+
+  top: -120px;
+  right: -120px;
+}
+
+.bride-groom-card::after{
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  background: rgba(255,255,255,0.03);
+
+  border-radius: 50%;
+
+  bottom: -90px;
+  left: -90px;
+}
+
+.mini-title{
+  display: inline-block;
+
+  margin-bottom: 18px;
+  padding: 9px 22px;
+
+  border-radius: 50px;
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  background: rgba(255,255,255,0.06);
+
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.bride-groom-card h1{
+  font-size: 31px;
+  line-height: 1.5;
+  margin-bottom: 22px;
+}
+
+.intro-text{
+  max-width: 680px;
+
+  margin: auto;
+
+  line-height: 2;
+  font-size: 15px;
+
+  opacity: 0.85;
 }
 
 .intro-item{
