@@ -123,27 +123,66 @@ SENIN • 01 JUNI 2026
 
 </section>
 
-<section class="couple-section reveal">
-
-<div class="section-line left-line"></div>
-<div class="section-line right-line"></div>
-
-<div class="couple-card">
-<h2>Hasan</h2>
-<h3>Hasan Nurdin</h3>
-<p>Putra Pertama dari Bapak Hasan Basri & Ibu Tini</p>
-</div>
-
-<div class="heart">❤</div>
-
-<div class="couple-card">
-<h2>Husnul</h2>
-<h3>Husnul Amanah</h3>
-<p>Putri Pertama dari Bapak Maman Herdiman & Ibu Eha Julaeha</p>
-</div>
-
 </section>
 
+<section class="couple-section reveal">
+
+  <div class="section-line left-line"></div>
+  <div class="section-line right-line"></div>
+
+  <!-- BRIDE & GROOM INTRO -->
+  <div class="bride-groom-card">
+
+    <span class="mini-title">Bride & Groom</span>
+
+    <h1>Assalamualaikum<br>Warahmatullahi Wabarakatuh</h1>
+
+    <p class="intro-text">
+      Maha suci Allah yang telah menciptakan makhluk-Nya
+      berpasang-pasangan. Ya Allah semoga ridho-Mu tercurah
+      mengiringi pernikahan kami.
+    </p>
+
+    <div class="intro-couple">
+
+      <div class="intro-item">
+        <h2>Husnul Amanah</h2>
+        <p>
+          Putri Kedua dari<br>
+          Bapak Maman Herdiman & Ibu Eha Julaeha
+        </p>
+      </div>
+
+      <div class="intro-heart">❤</div>
+
+      <div class="intro-item">
+        <h2>Hasan Nurdin</h2>
+        <p>
+          Putra Pertama dari<br>
+          Bapak H. Hasan Basri & Ibu Tini
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- COUPLE CARD -->
+  <div class="couple-card">
+    <h2>Hasan</h2>
+    <h3>Hasan Nurdin</h3>
+    <p>Putra Pertama dari Bapak Hasan Basri & Ibu Tini</p>
+  </div>
+
+  <div class="heart">❤</div>
+
+  <div class="couple-card">
+    <h2>Husnul</h2>
+    <h3>Husnul Amanah</h3>
+    <p>Putri Pertama dari Bapak Maman Herdiman & Ibu Eha Julaeha</p>
+  </div>
+
+</section>
 
 <section class="countdown-section reveal">
 
